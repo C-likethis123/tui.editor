@@ -30,7 +30,13 @@ const Underline = CommandManager.command(
       const doc = cm.getDoc();
       const originRange = mde.getRange();
 
-      changeSyntaxHtmlTags(doc, originRange, underlineOpeningTag, underlineRangeRegex, underlineContentRegex);
+      changeSyntaxHtmlTags(
+        doc,
+        originRange,
+        underlineOpeningTag,
+        underlineRangeRegex,
+        underlineContentRegex
+      );
 
       cm.focus();
     }

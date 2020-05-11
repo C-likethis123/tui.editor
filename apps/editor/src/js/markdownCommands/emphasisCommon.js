@@ -171,6 +171,36 @@ export const getClosingTag = function(openingHtmlTag) {
   return openingHtmlTag.replace('<', '</');
 };
 
+/**
+ * check expanded HTML and replace text using replacer
+ * @param {CodeMirror.doc} doc - doc of codemirror
+ * @param {range} range - origin range
+ * @param {number} expandSize - expandSize
+ * @param {function} checker - sytax check function
+ * @param {function} replacer - text replace function
+ * @returns {boolean} - if replace text, return true.
+ * @ignore
+ */
+export const expandReplaceHtmlTags = function(doc, range, expandSize, checker, replacer) {
+  const expendRange = getExpandedRange(range, expandSize);
+  let result = false;
+
+  if (expendRange) {
+    const { from, to } = expendRange;
+
+    to.ch += 1;
+    const expendRangeText = doc.getRange(from, to);
+
+    if (checker(expendRangeText)) {
+      doc.setSelection(from, to);
+      doc.replaceSelection(replacer(expendRangeText), 'around');
+      result = true;
+    }
+  }
+
+  return result;
+};
+
 export const changeSyntaxHtmlTags = function(doc, range, openingTag, syntaxRegex, contentRegex) {
   const { line, ch } = doc.getCursor();
   const selectionStr = doc.getSelection();
@@ -203,27 +233,4 @@ export const changeSyntaxHtmlTags = function(doc, range, openingTag, syntaxRegex
     }
     doc.setCursor(line, size);
   }
-
-  // 1. expand text and check syntax => remove syntax
-  // 2. check text is syntax => remove syntax
-  // 3. If text does not match syntax, remove syntax inside text and then append syntax
-  // if (isSyntax(selectionStr)) {
-  //   doc.replaceSelection(removeHtmlTags(selectionStr, openingTag), 'around');
-  // } else {
-  //   doc.replaceSelection(appendHtmlTags(selectionStr, openingTag, closingTag), 'around');
-  // }
-
-  // const afterSelectStr = doc.getSelection();
-  // let size = ch;
-
-  // if (!selectionStr) {
-  //   // If text was not selected, after replace text, move cursor
-  //   // For example **|** => | (move cusor -symbolLenth)
-  //   if (isSyntax(afterSelectStr)) {
-  //     size += symbolLength;
-  //   } else {
-  //     size -= symbolLength;
-  //   }
-  //   doc.setCursor(line, size);
-  // }
 };
