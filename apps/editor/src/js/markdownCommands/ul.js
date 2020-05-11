@@ -15,7 +15,7 @@ const UL = CommandManager.command(
   'markdown',
   /** @lends UL */ {
     name: 'UL',
-    keyMap: ['CTRL+U', 'META+U'],
+    keyMap: ['SHIFT+CTRL+U', 'SHIFT+META+U'],
     /**
      * Command handler
      * @param {MarkdownEditor} mde MarkdownEditor instance

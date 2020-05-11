@@ -15,7 +15,7 @@ const UL = CommandManager.command(
   'wysiwyg',
   /** @lends UL */ {
     name: 'UL',
-    keyMap: ['CTRL+U', 'META+U'],
+    keyMap: ['SHIFT+CTRL+U', 'SHIFT+META+U'],
     /**
      * Command Handler
      * @param {WysiwygEditor} wwe WYSIWYGEditor instance
