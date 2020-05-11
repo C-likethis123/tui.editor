@@ -34,6 +34,7 @@
   "browserslist": "last 2 versions, not ie <= 10",
   "scripts": {
     "lint": "eslint .",
+    "format": "./node_modules/.bin/eslint --fix src/js/*",
     "test": "karma start --no-single-run",
     "test:ne": "cross-env KARMA_SERVER=ne karma start",
     "test:types": "tsc --project test/types",
