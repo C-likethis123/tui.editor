@@ -140,3 +140,90 @@ export const changeSyntax = function(doc, range, symbol, syntaxRegex, contentReg
     doc.setCursor(line, size);
   }
 };
+
+/**
+ * remove HTML tag in the front and back of text
+ * @param {string} text - text
+ * @param {string} openingTag - text
+ * @returns {string}
+ * @ignore
+ */
+function removeHtmlTags(text, symbol) {
+  const symbolLength = symbol.length;
+  const removedString = text.substr(symbolLength, text.length - (symbolLength * 2 + 1));
+
+  return removedString;
+}
+
+/**
+ * append HTML tag in the front and back of text
+ * @param {string} text - text
+ * @param {string} openingTag - text
+ * @param {string} closingTag - text
+ * @returns {string}
+ * @ignore
+ */
+export const appendHtmlTags = function(text, openingTag, closingTag) {
+  return `${openingTag}${text}${closingTag}`;
+};
+
+export const getClosingTag = function(openingHtmlTag) {
+  return openingHtmlTag.replace('<', '</');
+};
+
+export const changeSyntaxHtmlTags = function(doc, range, openingTag, syntaxRegex, contentRegex) {
+  const { line, ch } = doc.getCursor();
+  const selectionStr = doc.getSelection();
+  const symbolLength = openingTag.length;
+  const closingTag = getClosingTag(openingTag);
+  const isSyntax = t => syntaxRegex.test(t);
+
+  if (
+    !(
+      expandReplaceHtmlTags(doc, range, symbolLength, isSyntax, t =>
+        removeHtmlTags(t, openingTag)
+      ) || replace(doc, selectionStr, isSyntax, t => removeHtmlTags(t, openingTag))
+    )
+  ) {
+    const removeSyntaxInsideText = selectionStr.replace(contentRegex, '$1');
+
+    doc.replaceSelection(appendHtmlTags(removeSyntaxInsideText, openingTag, closingTag), 'around');
+  }
+
+  const afterSelectStr = doc.getSelection();
+  let size = ch;
+
+  if (!selectionStr) {
+    // If text was not selected, after replace text, move cursor
+    // For example **|** => | (move cusor -symbolLenth)
+    if (isSyntax(afterSelectStr)) {
+      size += symbolLength;
+    } else {
+      size -= symbolLength;
+    }
+    doc.setCursor(line, size);
+  }
+
+  // 1. expand text and check syntax => remove syntax
+  // 2. check text is syntax => remove syntax
+  // 3. If text does not match syntax, remove syntax inside text and then append syntax
+  // if (isSyntax(selectionStr)) {
+  //   doc.replaceSelection(removeHtmlTags(selectionStr, openingTag), 'around');
+  // } else {
+  //   doc.replaceSelection(appendHtmlTags(selectionStr, openingTag, closingTag), 'around');
+  // }
+
+  // const afterSelectStr = doc.getSelection();
+  // let size = ch;
+
+  // if (!selectionStr) {
+  //   // If text was not selected, after replace text, move cursor
+  //   // For example **|** => | (move cusor -symbolLenth)
+  //   if (isSyntax(afterSelectStr)) {
+  //     size += symbolLength;
+  //   } else {
+  //     size -= symbolLength;
+  //   }
+  //   doc.setCursor(line, size);
+  // }
+};
