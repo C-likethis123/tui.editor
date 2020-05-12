@@ -416,6 +416,7 @@ class WysiwygEditor {
       const state = {
         strong: /(^B>|>B$|>B>|^B$|STRONG)/.test(data.path),
         emph: /(>I|>EM|^I$|^EM$)/.test(data.path),
+        ins: /(^U>|>U$|>U>|^U$|INS)/.test(data.path),
         strike: /(^S>|>S$|>S>|^S$|DEL)/.test(data.path),
         code: /CODE/.test(data.path),
         codeBlock: /PRE/.test(data.path),
