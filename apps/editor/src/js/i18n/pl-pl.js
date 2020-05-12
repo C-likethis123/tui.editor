@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Polish
  * @author Marcin Mikołajczak <me@m4sk.in>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['pl', 'pl-PL'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',

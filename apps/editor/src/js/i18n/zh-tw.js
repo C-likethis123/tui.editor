@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Traditional Chinese
  * @author Tzu-Ray Su <raysu3329@gmail.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage('zh-TW', {
   Markdown: 'Markdown',
   WYSIWYG: '所見即所得',

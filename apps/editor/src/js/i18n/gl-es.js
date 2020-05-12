@@ -1,10 +1,11 @@
 /**
  * @fileoverview I18N for Spanish
  * @author Aida Vidal <avidal@emapic.es>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
-
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['gl', 'gl-ES'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',

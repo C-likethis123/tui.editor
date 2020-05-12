@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for English
  * @author NHN FE Development Lab <dl_javascript@nhn.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['en', 'en-US'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',

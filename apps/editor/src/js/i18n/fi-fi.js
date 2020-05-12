@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Finnish
  * @author Tomi Mynttinen <pikseli@iki.fi>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['fi', 'fi-FI'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',

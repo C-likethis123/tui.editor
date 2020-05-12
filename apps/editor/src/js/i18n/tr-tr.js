@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Turkish
  * @author Mesut Gölcük <mesutgolcuk@gmail.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['tr', 'tr-TR'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',

@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Korean
  * @author NHN FE Development Lab <dl_javascript@nhn.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['ko', 'ko-KR'], {
   Markdown: '마크다운',
   WYSIWYG: '위지윅',

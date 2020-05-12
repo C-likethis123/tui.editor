@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for German
  * @author Jann-Niklas Kiepert <jannkiepert@vivaldi.net>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['de', 'de-DE'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',

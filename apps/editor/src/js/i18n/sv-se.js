@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Swedish
  * @author Magnus Aspling <magnus@yug.se>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['sv', 'sv-SE'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',
