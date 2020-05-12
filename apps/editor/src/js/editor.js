@@ -144,6 +144,7 @@ class ToastUIEditor {
           'heading',
           'bold',
           'italic',
+          'underline',
           'strike',
           'divider',
           'hr',
