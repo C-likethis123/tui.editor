@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Russian
  * @author Stepan Samko <stpnsamko@gmail.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['ru', 'ru-RU'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',
@@ -13,6 +15,7 @@ Editor.setLanguage(['ru', 'ru-RU'], {
   Paragraph: 'Абзац',
   Bold: 'Жирный',
   Italic: 'Курсив',
+  Underline: 'Подчеркнутый',
   Strike: 'Зачеркнутый',
   Code: 'Встроенный код',
   Line: 'Строка',

@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Ukrainian
  * @author Nikolya <k_m_i@i.ua>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['uk', 'uk-UA'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',
@@ -13,6 +15,7 @@ Editor.setLanguage(['uk', 'uk-UA'], {
   Paragraph: 'Абзац',
   Bold: 'Жирний',
   Italic: 'Курсив',
+  Underline: 'Підкреслeний',
   Strike: 'Закреслений',
   Code: 'Вбудований код',
   Line: 'Лінія',

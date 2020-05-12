@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Czech
  * @author Dmitrij Tkačenko <dmitrij.tkacenko@scalesoft.cz>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['cs', 'cs-CZ'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',
@@ -13,6 +15,7 @@ Editor.setLanguage(['cs', 'cs-CZ'], {
   Paragraph: 'Odstavec',
   Bold: 'Tučné',
   Italic: 'Kurzíva',
+  Underline: 'Podtržené',
   Strike: 'Přeškrtnuté',
   Code: 'Kód',
   Line: 'Vodorovná čára',

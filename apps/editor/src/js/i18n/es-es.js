@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Spanish
  * @author Enrico Lamperti <oss@elamperti.com>
+  * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['es', 'es-ES'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',
@@ -13,6 +15,7 @@ Editor.setLanguage(['es', 'es-ES'], {
   Paragraph: 'Párrafo',
   Bold: 'Negrita',
   Italic: 'Itálica',
+  Underline: 'Subrayar',
   Strike: 'Tachado',
   Code: 'Código',
   Line: 'Línea',

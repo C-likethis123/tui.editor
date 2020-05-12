@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Chinese
  * @author NHN FE Development Lab <dl_javascript@nhn.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage('zh-CN', {
   Markdown: 'Markdown',
   WYSIWYG: '所见即所得',
@@ -13,6 +15,7 @@ Editor.setLanguage('zh-CN', {
   Paragraph: '文本',
   Bold: '加粗',
   Italic: '斜体字',
+  Underline: '加下划线',
   Strike: '删除线',
   Code: '内嵌代码',
   Line: '水平线',

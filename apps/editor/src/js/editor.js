@@ -50,6 +50,7 @@ import mdTable from './markdownCommands/table';
 import mdTask from './markdownCommands/task';
 import mdCode from './markdownCommands/code';
 import mdCodeBlock from './markdownCommands/codeBlock';
+import mdUnderline from './markdownCommands/underline';
 
 // wysiwyg Commands
 import wwBold from './wysiwygCommands/bold';
@@ -75,6 +76,7 @@ import wwOutdent from './wysiwygCommands/outdent';
 import wwTask from './wysiwygCommands/task';
 import wwCode from './wysiwygCommands/code';
 import wwCodeBlock from './wysiwygCommands/codeBlock';
+import wwUnderline from './wysiwygCommands/underline';
 
 import { ToastMark } from '@toast-ui/toastmark';
 import { register } from './scroll/sync';
@@ -142,6 +144,7 @@ class ToastUIEditor {
           'heading',
           'bold',
           'italic',
+          'underline',
           'strike',
           'divider',
           'hr',
@@ -315,6 +318,7 @@ class ToastUIEditor {
   _addDefaultCommands() {
     this.addCommand(mdBold);
     this.addCommand(mdItalic);
+    this.addCommand(mdUnderline);
     this.addCommand(mdBlockquote);
     this.addCommand(mdHeading);
     this.addCommand(mdParagraph);
@@ -354,6 +358,7 @@ class ToastUIEditor {
     this.addCommand(wwCode);
     this.addCommand(wwCodeBlock);
     this.addCommand(wwStrike);
+    this.addCommand(wwUnderline);
   }
 
   addCommand(type, props) {

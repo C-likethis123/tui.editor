@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Italian
  * @author Massimo Redaelli <massimo@typish.io>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['it', 'it-IT'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',
@@ -13,6 +15,7 @@ Editor.setLanguage(['it', 'it-IT'], {
   Paragraph: 'Paragrafo',
   Bold: 'Grassetto',
   Italic: 'Corsivo',
+  Underline: 'Sottolinea',
   Strike: 'Barrato',
   Code: 'Codice',
   Line: 'Linea',

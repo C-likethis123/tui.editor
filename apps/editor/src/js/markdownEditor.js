@@ -24,6 +24,7 @@ const keyMapper = KeyMapper.getSharedInstance();
 const defaultToolbarState = {
   strong: false,
   emph: false,
+  ins: false,
   strike: false,
   thematicBreak: false,
   blockQuote: false,
@@ -55,6 +56,10 @@ function getToolbarState(targetNode, ch, mdLine, mdCh) {
 
   traverseParentNodes(targetNode, mdNode => {
     const type = getToolbarStateType(mdNode);
+
+    if (type === 'htmlInline' && mdNode.literal === '</u>') {
+      state.ins = true;
+    }
 
     if (!isBoolean(state[type])) {
       return;
