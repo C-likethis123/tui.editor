@@ -13,6 +13,7 @@ Editor.setLanguage(['cs', 'cs-CZ'], {
   Paragraph: 'Odstavec',
   Bold: 'Tučné',
   Italic: 'Kurzíva',
+  Underline: 'Podtržené',
   Strike: 'Přeškrtnuté',
   Code: 'Kód',
   Line: 'Vodorovná čára',

@@ -13,6 +13,7 @@ Editor.setLanguage('zh-TW', {
   Paragraph: '內文',
   Bold: '粗體',
   Italic: '斜體',
+  Underline: '底線',
   Strike: '刪除線',
   Code: '內嵌程式碼',
   Line: '分隔線',

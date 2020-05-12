@@ -13,6 +13,7 @@ Editor.setLanguage(['en', 'en-US'], {
   Paragraph: 'Paragraph',
   Bold: 'Bold',
   Italic: 'Italic',
+  Underline: 'Underline',
   Strike: 'Strike',
   Code: 'Inline code',
   Line: 'Line',

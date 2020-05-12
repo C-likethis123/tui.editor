@@ -13,6 +13,7 @@ Editor.setLanguage(['ko', 'ko-KR'], {
   Paragraph: '본문',
   Bold: '굵게',
   Italic: '기울임꼴',
+  Underline: '밑줄',
   Strike: '취소선',
   Code: '인라인 코드',
   Line: '문단나눔',

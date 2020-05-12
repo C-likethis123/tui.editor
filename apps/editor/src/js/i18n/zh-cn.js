@@ -13,6 +13,7 @@ Editor.setLanguage('zh-CN', {
   Paragraph: '文本',
   Bold: '加粗',
   Italic: '斜体字',
+  Underline: '加下划线',
   Strike: '删除线',
   Code: '内嵌代码',
   Line: '水平线',

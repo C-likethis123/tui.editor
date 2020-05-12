@@ -13,6 +13,7 @@ Editor.setLanguage(['tr', 'tr-TR'], {
   Paragraph: 'Paragraf',
   Bold: 'Kalın',
   Italic: 'İtalik',
+  Underline: 'Altı çizili',
   Strike: 'Altı çizgili',
   Code: 'Satır içi kod',
   Line: 'Çizgi',

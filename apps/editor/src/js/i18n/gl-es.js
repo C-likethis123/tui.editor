@@ -14,6 +14,7 @@ Editor.setLanguage(['gl', 'gl-ES'], {
   Paragraph: 'Parágrafo',
   Bold: 'Negriña',
   Italic: 'Cursiva',
+  Underline: 'Subliñado',
   Strike: 'Riscado',
   Code: 'Código',
   Line: 'Liña',

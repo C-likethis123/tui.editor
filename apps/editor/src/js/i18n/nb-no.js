@@ -13,6 +13,7 @@ Editor.setLanguage(['nb', 'nb-NO'], {
   Paragraph: 'Paragraf',
   Bold: 'Fet skrift',
   Italic: 'Italic',
+  Underline: 'Understreking',
   Strike: 'Strike',
   Code: 'Kode',
   Line: 'Linje',

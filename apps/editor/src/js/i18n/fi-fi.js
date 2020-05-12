@@ -13,6 +13,7 @@ Editor.setLanguage(['fi', 'fi-FI'], {
   Paragraph: 'Kappale',
   Bold: 'Lihavointi',
   Italic: 'Kursivointi',
+  Underline: 'Alleviivaus',
   Strike: 'Yliviivaus',
   Code: 'Koodi',
   Line: 'Vaakaviiva',

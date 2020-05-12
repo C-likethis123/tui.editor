@@ -13,6 +13,7 @@ Editor.setLanguage('ar', {
   Paragraph: 'فقرة',
   Bold: 'خط عريض',
   Italic: 'خط مائل',
+  Underline: 'تسطير',
   Strike: 'إضراب',
   Code: 'رمز',
   Line: 'خط',

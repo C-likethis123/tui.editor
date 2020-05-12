@@ -13,6 +13,7 @@ Editor.setLanguage(['uk', 'uk-UA'], {
   Paragraph: 'Абзац',
   Bold: 'Жирний',
   Italic: 'Курсив',
+  Underline: 'Підкреслeний',
   Strike: 'Закреслений',
   Code: 'Вбудований код',
   Line: 'Лінія',

@@ -13,6 +13,7 @@ Editor.setLanguage(['pl', 'pl-PL'], {
   Paragraph: 'Akapit',
   Bold: 'Pogrubienie',
   Italic: 'Kursywa',
+  Underline: 'Podkreślenie',
   Strike: 'Przekreślenie',
   Code: 'Fragment kodu',
   Line: 'Linia',

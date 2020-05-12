@@ -13,6 +13,7 @@ Editor.setLanguage(['ja', 'ja-JP'], {
   Paragraph: '本文',
   Bold: '太字',
   Italic: 'イタリック',
+  Underline: '下線',
   Strike: 'ストライク',
   Code: 'インラインコード',
   Line: 'ライン',

@@ -13,6 +13,7 @@ Editor.setLanguage(['it', 'it-IT'], {
   Paragraph: 'Paragrafo',
   Bold: 'Grassetto',
   Italic: 'Corsivo',
+  Underline: 'Sottolinea',
   Strike: 'Barrato',
   Code: 'Codice',
   Line: 'Linea',

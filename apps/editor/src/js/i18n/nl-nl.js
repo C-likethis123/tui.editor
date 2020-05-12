@@ -13,6 +13,7 @@ Editor.setLanguage(['nl', 'nl-NL'], {
   Paragraph: 'Alinea',
   Bold: 'Vet',
   Italic: 'Cursief',
+  Underline: 'Onderstrepen',
   Strike: 'Doorhalen',
   Code: 'Inline code',
   Line: 'Regel',

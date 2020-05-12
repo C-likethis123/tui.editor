@@ -13,6 +13,7 @@ Editor.setLanguage(['ru', 'ru-RU'], {
   Paragraph: 'Абзац',
   Bold: 'Жирный',
   Italic: 'Курсив',
+  Underline: 'Подчеркнутый',
   Strike: 'Зачеркнутый',
   Code: 'Встроенный код',
   Line: 'Строка',

@@ -13,6 +13,7 @@ Editor.setLanguage(['sv', 'sv-SE'], {
   Paragraph: 'Paragraf',
   Bold: 'Fet',
   Italic: 'Kursiv',
+  Underline: 'Understrykning',
   Strike: 'Genomstruken',
   Code: 'Kodrad',
   Line: 'Linje',
