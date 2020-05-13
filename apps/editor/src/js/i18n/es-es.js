@@ -1,7 +1,7 @@
 /**
  * @fileoverview I18N for Spanish
  * @author Enrico Lamperti <oss@elamperti.com>
-  * @author Chow Jia Ying <chowjiaying211@gmail.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
