@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for French
  * @author Stanislas Michalak <stanislas.michalak@gmail.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['fr', 'fr-FR'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',
@@ -13,6 +15,7 @@ Editor.setLanguage(['fr', 'fr-FR'], {
   Paragraph: 'Paragraphe',
   Bold: 'Gras',
   Italic: 'Italique',
+  Underline: 'Souligner',
   Strike: 'Barré',
   Code: 'Code en ligne',
   Line: 'Ligne',

@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Dutch
  * @author NHN FE Development Lab <dl_javascript@nhn.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['nl', 'nl-NL'], {
   Markdown: 'Markdown',
   WYSIWYG: 'WYSIWYG',
@@ -13,6 +15,7 @@ Editor.setLanguage(['nl', 'nl-NL'], {
   Paragraph: 'Alinea',
   Bold: 'Vet',
   Italic: 'Cursief',
+  Underline: 'Onderstrepen',
   Strike: 'Doorhalen',
   Code: 'Inline code',
   Line: 'Regel',

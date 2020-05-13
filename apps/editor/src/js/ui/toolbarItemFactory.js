@@ -52,6 +52,15 @@ class ToolbarItemFactory {
           state: 'emph'
         });
         break;
+      case 'underline':
+        toolbarItem = new ToolbarButton({
+          name: 'underline',
+          className: 'tui-underline',
+          command: 'Underline',
+          tooltip: i18n.get('Underline'),
+          state: 'ins'
+        });
+        break;
       case 'strike':
         toolbarItem = new ToolbarButton({
           name: 'strike',

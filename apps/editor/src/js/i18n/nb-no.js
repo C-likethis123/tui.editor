@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Norwegian
  * @author Anton Reytarovskiy <reitarovskii.toh@gmail.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage(['nb', 'nb-NO'], {
   Markdown: 'Funksjonaliteter',
   WYSIWYG: 'WYSIWYG',
@@ -13,6 +15,7 @@ Editor.setLanguage(['nb', 'nb-NO'], {
   Paragraph: 'Paragraf',
   Bold: 'Fet skrift',
   Italic: 'Italic',
+  Underline: 'Understreking',
   Strike: 'Strike',
   Code: 'Kode',
   Line: 'Linje',

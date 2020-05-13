@@ -1,9 +1,11 @@
 /**
  * @fileoverview I18N for Arabic
  * @author Amira Salah <amira.salah@itworx.com>
+ * @author Chow Jia Ying <chowjiaying211@gmail.com>
  */
 import Editor from '../editor';
 
+// added translation for 'underline'
 Editor.setLanguage('ar', {
   Markdown: 'لغة ترميز',
   WYSIWYG: 'ما تراه هو ما تحصل عليه',
@@ -13,6 +15,7 @@ Editor.setLanguage('ar', {
   Paragraph: 'فقرة',
   Bold: 'خط عريض',
   Italic: 'خط مائل',
+  Underline: 'تسطير',
   Strike: 'إضراب',
   Code: 'رمز',
   Line: 'خط',
