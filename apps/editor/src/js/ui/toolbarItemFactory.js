@@ -7,6 +7,7 @@ import ToolbarItem from './toolbarItem';
 import ToolbarButton from './toolbarButton';
 import ToolbarDivider from './toolbarDivider';
 import i18n from '../i18n';
+import { getFormattedKeyboardShortcuts } from '../keyboardShortcuts';
 
 /**
  * Toolbar Item Factory
@@ -39,7 +40,7 @@ class ToolbarItemFactory {
           name: 'bold',
           className: 'tui-bold',
           command: 'Bold',
-          tooltip: i18n.get('Bold'),
+          tooltip: `${i18n.get('Bold')} (${getFormattedKeyboardShortcuts('bold')})`,
           state: 'strong'
         });
         break;
@@ -48,7 +49,7 @@ class ToolbarItemFactory {
           name: 'italic',
           className: 'tui-italic',
           command: 'Italic',
-          tooltip: i18n.get('Italic'),
+          tooltip: `${i18n.get('Italic')} (${getFormattedKeyboardShortcuts('italic')})`,
           state: 'emph'
         });
         break;
@@ -57,7 +58,7 @@ class ToolbarItemFactory {
           name: 'underline',
           className: 'tui-underline',
           command: 'Underline',
-          tooltip: i18n.get('Underline'),
+          tooltip: `${i18n.get('Underline')} (${getFormattedKeyboardShortcuts('underline')})`,
           state: 'ins'
         });
         break;
@@ -66,7 +67,7 @@ class ToolbarItemFactory {
           name: 'strike',
           className: 'tui-strike',
           command: 'Strike',
-          tooltip: i18n.get('Strike'),
+          tooltip: `${i18n.get('Strike')} (${getFormattedKeyboardShortcuts('strike')})`,
           state: 'strike'
         });
         break;
@@ -75,7 +76,7 @@ class ToolbarItemFactory {
           name: 'hr',
           className: 'tui-hrline',
           command: 'HR',
-          tooltip: i18n.get('Line'),
+          tooltip: `${i18n.get('Line')} (${getFormattedKeyboardShortcuts('hr')})`,
           state: 'thematicBreak'
         });
         break;
@@ -84,7 +85,7 @@ class ToolbarItemFactory {
           name: 'quote',
           className: 'tui-quote',
           command: 'Blockquote',
-          tooltip: i18n.get('Blockquote'),
+          tooltip: `${i18n.get('Blockquote')} (${getFormattedKeyboardShortcuts('quote')})`,
           state: 'blockQuote'
         });
         break;
@@ -93,7 +94,7 @@ class ToolbarItemFactory {
           name: 'ul',
           className: 'tui-ul',
           command: 'UL',
-          tooltip: i18n.get('Unordered list'),
+          tooltip: `${i18n.get('Unordered list')} (${getFormattedKeyboardShortcuts('ul')})`,
           state: 'list'
         });
         break;
@@ -102,7 +103,7 @@ class ToolbarItemFactory {
           name: 'ol',
           className: 'tui-ol',
           command: 'OL',
-          tooltip: i18n.get('Ordered list'),
+          tooltip: `${i18n.get('Ordered list')} (${getFormattedKeyboardShortcuts('ol')})`,
           state: 'orderedList'
         });
         break;
@@ -111,7 +112,7 @@ class ToolbarItemFactory {
           name: 'task',
           className: 'tui-task',
           command: 'Task',
-          tooltip: i18n.get('Task'),
+          tooltip: `${i18n.get('Task')} (${getFormattedKeyboardShortcuts('task')})`,
           state: 'taskList'
         });
         break;
@@ -146,7 +147,7 @@ class ToolbarItemFactory {
           name: 'code',
           className: 'tui-code',
           command: 'Code',
-          tooltip: i18n.get('Code'),
+          tooltip: `${i18n.get('Code')} (${getFormattedKeyboardShortcuts('code')})`,
           state: 'code'
         });
         break;
@@ -155,7 +156,9 @@ class ToolbarItemFactory {
           name: 'codeblock',
           className: 'tui-codeblock',
           command: 'CodeBlock',
-          tooltip: i18n.get('Insert CodeBlock'),
+          tooltip: `${i18n.get('Insert CodeBlock')} (${getFormattedKeyboardShortcuts(
+            'codeblock'
+          )})`,
           state: 'codeBlock'
         });
         break;
