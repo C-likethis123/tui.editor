@@ -97,7 +97,7 @@ module.exports = (env, argv) => {
     config.plugins = [
       new webpack.BannerPlugin(
         [
-          'TOAST UI Editor : Color Syntax Plugin',
+          'TOAST UI Editor : Underline Plugin',
           `@version ${version} | ${new Date().toDateString()}`,
           `@author ${author}`,
           `@license ${license}`

@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "lint": "eslint src/**",
+    "publish": "gitpkg publish",
     "build": "webpack -p --progress",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
